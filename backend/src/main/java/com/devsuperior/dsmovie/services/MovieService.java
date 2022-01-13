@@ -15,7 +15,7 @@ public class MovieService {
 
 	@Autowired
 	private MovieRepository repository;
-	
+
 	@Transactional(readOnly = true)
 	public Page<MovieDTO> findAll(Pageable pageable) {
 		Page<Movie> result = repository.findAll(pageable);
@@ -29,6 +29,4 @@ public class MovieService {
 		MovieDTO dto = new MovieDTO(result);
 		return dto;
 	}
-
-	
 }
