@@ -6,7 +6,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_score")
-
 public class Score {
 
 	@EmbeddedId
@@ -40,7 +39,4 @@ public class Score {
 	public void setValue(Double value) {
 		this.value = value;
 	}
-	
-	
-	
 }

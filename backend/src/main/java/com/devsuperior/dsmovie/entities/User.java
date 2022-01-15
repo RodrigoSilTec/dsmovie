@@ -8,7 +8,6 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-
 public class User {
 
 	@Id
@@ -21,7 +20,6 @@ public class User {
 	}
 
 	public User(Long id, String email) {
-		super();
 		this.id = id;
 		this.email = email;
 	}
@@ -40,5 +38,5 @@ public class User {
 
 	public void setEmail(String email) {
 		this.email = email;
-	}	
+	}
 }
