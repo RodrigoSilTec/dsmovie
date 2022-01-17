@@ -29,11 +29,14 @@ function Listing(): JSX.Element {
             });
     }, [pageNumber]);
 
+    const handlePageChange = (newPageNumber : number) => {
+        setPageNumber(newPageNumber);
+    }
+
     return (
 
         <>
-            <p>{pageNumber}</p>
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange} />
 
             <div className="container">
                 <div className="row">
@@ -46,7 +49,7 @@ function Listing(): JSX.Element {
                 </div>
             </div>
 
-
+            <Pagination page={page} onChange={handlePageChange} />
         </>
     );
 }
