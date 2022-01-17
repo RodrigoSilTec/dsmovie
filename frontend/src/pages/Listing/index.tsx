@@ -14,7 +14,7 @@ function Listing(): JSX.Element {
         last: true,
         totalPages: 0,
         totalElements: 0,
-        size: 12,
+        size: 8,
         number: 0,
         first: true,
         numberOfElements: 0,
